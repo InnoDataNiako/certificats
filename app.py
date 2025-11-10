@@ -159,7 +159,9 @@ try:
     
     if images:
         for i, img_data in enumerate(images):
-            st.image(img_data, use_container_width=True, caption=f"Page {i+1} du certificat")
+            # st.image(img_data, use_container_width=True, caption=f"Page {i+1} du certificat")
+            st.image(img_data, width=700, caption=f"Page {i+1} du certificat")
+
     else:
         st.error("Impossible de charger le certificat")
     
